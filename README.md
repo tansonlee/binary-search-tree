@@ -30,7 +30,7 @@ The following functions are implemented:
 
 -   O(1) time
 -   takes a strict total order
--   returns an empty BST with that total order <br>
+-   returns an empty BST with that total order <br> <br>
 
 **insert(tree, element)**
 
