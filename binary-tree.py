@@ -16,27 +16,27 @@
 # 	BST -> BST
 # 	returns a BST with all the elements of tree except num
 
-# is_empty(tree)
+# is_empty(tree) : O(1)
 # 	BST -> boolean
 # 	returns true if tree is an empty BST; false otherwise
 
-# size(tree)
+# size(tree) : O(n) where n = size(tree)
 # 	BST -> integer
 # 	returns the number of nodes in tree
 
-# contains(tree, num)
+# contains(tree, num) : O(log(n)) where n = size(tree)
 # 	BST -> boolean
 # 	returns true if num is an element of tree; false otherwise
 
-# dump(tree)
+# dump(tree) : O(log(n)) where n = size(tree)
 # 	BST -> void
 # 	prints the elements of tree
 
-# get_min(tree)
+# get_min(tree) : O(log(n)) where n = size(tree)
 # 	BST -> <type of elements in tree>
 # 	returns the minimum element in tree
 
-# get_max(tree)
+# get_max(tree) : O(log(n)) where n = size(tree)
 # 	BST -> <type of elements in tree>
 # 	returns the maximum element in tree
 
@@ -63,7 +63,7 @@ def dump(tree):
 	to_strict = tree.to_strict
 	if root is not None:
 		dump(BST(to_strict, root.left))
-		print(root.value)
+		print(root.value, end=" ")
 		dump(BST(to_strict, root.right))
 
 def insert(tree, num):
@@ -227,7 +227,21 @@ def is_empty(tree):
 	root = tree.root
 	return root is None
 
-a = BST(lambda x, y : x < y)
-b = insert(a, 10)
-c = insert(b, 100)
-d = insert(c, 1)
+from functools import reduce
+class Dog:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+
+dog1 = Dog("Brownie", 1)
+dog2 = Dog("Jack", 8)
+dog3 = Dog("Spark", 4)
+dog4 = Dog("Ruby", 6)
+dogs = [dog1, dog2, dog3, dog4]
+
+strict_total_order = lambda dog1, dog2 : dog1.age < dog2.age
+dogs_bst = BST(strict_total_order)
+
+dogs_bst1 = reduce(insert, dogs, dogs_bst)
+
+print(get_min(dogs_bst1).name)
