@@ -2,6 +2,15 @@
 
 ## Implementation of a binary search tree in Python using Functional Programming
 
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [List of Functions](#functions)
+3. [Examples](#examples)
+4. [Description of Functions](#description-of-functions)
+
+## Introduction
+
 This implementation of a binary search tree (BST) follows the Functional Programming Paradigm as it adheres to:
 
 -   Immutability
@@ -9,6 +18,8 @@ This implementation of a binary search tree (BST) follows the Functional Program
 -   Avoiding side-effects
 
 It also allows for any data which can be ordered using a total order to be stored (not only numbers). This is done using a strict total order. If you want numbers to be stored by increasing order (like 1, 2, 3, 4, 5), use the total order "<" implemented by: lambda x, y : x < y
+
+## Functions
 
 The following functions are implemented:
 
@@ -21,11 +32,6 @@ The following functions are implemented:
 -   get_min(tree)
 -   get_max(tree)
 -   dump(tree) \*\*this is an impure function
-
-## Table of Contents
-
-1. [Examples](#examples)
-2. [Description of Functions](#description-of-functions)
 
 ## Examples
 
