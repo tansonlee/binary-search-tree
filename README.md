@@ -104,7 +104,7 @@ The output is:
 ```python
 True
 False
-"Brownie"
+Brownie
 4
 ```
 
