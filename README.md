@@ -1,6 +1,6 @@
 # Binary Search Tree
 
-## Implementation of a binary search tree in Python using Functional Programming
+## Implementation of a BST using Functional Programming
 
 ## Table of Contents
 
@@ -12,7 +12,6 @@
 ## Introduction
 
 This implementation of a binary search tree (BST) follows the Functional Programming Paradigm as it adheres to:
-
 -   Immutability
 -   Pure functions
 -   Avoiding side-effects
@@ -22,7 +21,6 @@ It also allows for any data which can be ordered using a total order to be store
 ## Functions
 
 The following functions are implemented:
-
 -   BST(strict_total_order)
 -   insert(tree, element)
 -   remove(tree, element)
@@ -38,25 +36,21 @@ The following functions are implemented:
 ## Description of Functions
 
 **BST(strict_total_order)**
-
 -   O(1) time
 -   takes a strict total order
 -   returns an empty BST with that total order <br> <br>
 
 **insert(tree, element)**
-
 -   O(log(n)) time where n = size(tree)
 -   takes a BST and an element
 -   returns a BST with the elements of tree and element <br> <br>
 
 **remove(tree, element)**
-
 -   O(log(n)) time where n = size(tree)
 -   takes a non-empty BST which contains element and an element
 -   returns a BST with the elements of tree except for element <br> <br>
 
 **contains(tree, element)**
-
 -   O(log(n)) time where n = size(tree)
 -   takes a BST and an element
 -   returns true if element is in tree; false otherwise <br> <br>
