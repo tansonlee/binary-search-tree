@@ -22,9 +22,14 @@ The following functions are implemented:
 -   get_max(tree)
 -   dump(tree) \*\*this is an impure function
 
+## Table of Contents
+
+1. [Examples](#examples)
+2. [Description of Functions](#description-of-functions)
+
 ## Examples
 
-## Description of functions
+## Description of Functions
 
 **BST(strict_total_order)**
 
