@@ -38,15 +38,16 @@ The following functions are implemented:
 Create a BST with elements 1 - 10 sorted by the strict total order "<"
 ```python
 from random import shuffle
+from functools import reduce
+
 # create the list of elements to insert
 elements_to_insert = [num for num in range(1, 11)]
 shuffle(elements_to_insert) # ensures the tree is probabaly near minimal height
 
 # create the BST
 strict_total_order = lambda x, y : x < y
-my_bst = BST(strict_total_order)
-for element in elements_to_insert:
-	my_bst = insert(my_bst, element)
+empty_bst = BST(strict_total_order)
+my_bst = reduce(insert, elements_to_insert, empty_bst)
 
 # print the contents of the BST
 dump(my_bst)
@@ -70,6 +71,7 @@ False
 1
 ```
 
+---
 
 **Objects**
 
@@ -135,7 +137,7 @@ Brownie
 
 **remove(tree, element)**
 -   O(h) time where h is the height of tree
--   takes a non-empty BST which contains element and an element
+-   takes a non-empty BST which contains element
 -   returns a BST with the elements of tree except for element <br> <br>
 
 **contains(tree, element)**
@@ -151,7 +153,7 @@ Brownie
 **is_empty(tree)**
 -   O(1) time
 -   takes a BST
--   returns true if tree if tree is an empty BST; false otherwise <br> <br>
+-   returns true if tree is an empty BST; false otherwise <br> <br>
 
 **get_min(tree)**
 -   O(h) time where h is the height of tree
