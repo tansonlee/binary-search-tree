@@ -30,49 +30,49 @@ The following functions are implemented:
 
 -   O(1) time
 -   takes a strict total order
--   returns an empty BST with that total order
+-   returns an empty BST with that total order <br>
 
 **insert(tree, element)**
 
 -   O(log(n)) time where n = size(tree)
 -   takes a BST and an element
--   returns a BST with the elements of tree and element
+-   returns a BST with the elements of tree and element <br>
 
 **remove(tree, element)**
 
 -   O(log(n)) time where n = size(tree)
 -   takes a non-empty BST which contains element and an element
--   returns a BST with the elements of tree except for element
+-   returns a BST with the elements of tree except for element <br>
 
 **contains(tree, element)**
 
 -   O(log(n)) time where n = size(tree)
 -   takes a BST and an element
--   returns true if element is in tree; false otherwise
+-   returns true if element is in tree; false otherwise <br>
 
 **size(tree)**
 
 -   O(n) time where n = size(tree)
 -   takes a BST
--   returns the number of elements in tree
+-   returns the number of elements in tree <br>
 
 **is_empty(tree)**
 
 -   O(1) time
 -   takes a BST
--   returns true if tree if tree is an empty BST; false otherwise
+-   returns true if tree if tree is an empty BST; false otherwise <br>
 
 **get_min(tree)**
 
 -   O(log(n)) time where n = size(tree)
 -   takes a non-empty BST
--   returns the minimum element of tree
+-   returns the minimum element of tree <br>
 
 **get_max(tree)**
 
 -   O(log(n)) time where n = size(tree)
 -   takes a non-empty BST
--   returns the maximum element of tree
+-   returns the maximum element of tree <br>
 
 **dump(tree)**
 
