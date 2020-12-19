@@ -16,7 +16,7 @@ This implementation of a binary search tree (BST) follows the Functional Program
 -   Pure functions
 -   Avoiding side-effects
 
-It also allows for any data which can be ordered using a total order to be stored (not only numbers). This is done using a strict total order. If you want numbers to be stored by increasing order (like 1, 2, 3, 4, 5), use the total order "<" implemented by: lambda x, y : x < y
+It also allows for any data which can be ordered using a total order to be stored (not only numbers). This is done using a strict total order. 
 
 ## Functions
 
