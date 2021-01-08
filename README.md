@@ -178,6 +178,6 @@ Brownie
 
 1. Follow this link to the online editor: [Binary Search Tree](https://repl.it/@TansonL/binary-search-tree).
 
-2. Replace the example in main.py with your program.
+2. Replace the example in main.py with your program. You may need to create an account to modify the code.
 
 3. Run the program by clicking the green Run button.
