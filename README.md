@@ -2,12 +2,15 @@
 
 ## Implementation of a BST using Functional Programming
 
+You can use this implementaion online using repl.it here: [Binary Search Tree](https://repl.it/@TansonL/binary-search-tree)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [List of Functions](#functions)
 3. [Examples](#examples)
 4. [Description of Functions](#description-of-functions)
+5. [How to Use](#how-to-use)
 
 ## Introduction
 
@@ -170,3 +173,11 @@ Brownie
 -   O(n) time where n = size(tree)
 -   takes a BST
 -   prints the elements of tree
+
+## How to Use
+
+1. Follow this link to the online editor: [Binary Search Tree](https://repl.it/@TansonL/binary-search-tree).
+
+2. Replace the example in main.py with your program.
+
+3. Run the program by clicking the green Run button.
